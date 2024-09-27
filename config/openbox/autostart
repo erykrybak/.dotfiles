@@ -1,0 +1,11 @@
+picom --config ~/.config/picom.conf -b &
+feh --bg-fill ~/.config/openbox/ign_cityRain.png  
+xfce4-power-manager &
+dunst -config ~/.config/dunst/dunstrc &
+greenclip daemon &
+nm-applet &
+xinput set-prop 10 "libinput Tapping Enabled" 1
+xinput set-prop 10 "libinput Accel Speed" 0.3
+xrandr --output HDMI-A-0 --set "TearFree" "on" --rate 60 --primary --output DisplayPort-2 --set "TearFree" "on" --rate 60 --left-of HDMI-A-0
+tint2 &
+(sleep 5; volumeicon) &
